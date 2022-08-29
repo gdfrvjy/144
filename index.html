@@ -1,45 +1,130 @@
-<html>
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@gdfrvjy 
+yitzhakapps
+/
+yitzhakapps.github.io
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+yitzhakapps.github.io/index.html
+@yitzhakapps
+yitzhakapps Update index.html
+Latest commit 506e43e yesterday
+ History
+ 1 contributor
+330 lines (283 sloc)  9.9 KB
 
+
+<!DOCTYPE html>
+<html lang="he-IL" dir="rtl">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1255">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:106%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-size:10.0pt;
-	font-family:"Calibri",sans-serif;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+	<meta charset="utf-8" />
+	<title>יצחק אפליקציות</title>
+	<meta name="description" content="בנית אפליקציות" />
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="https://github.com/yitzhakapps/yitzhakapps.github.io/blob/main/ICON/storshkoof.png?raw=true"/>
 
+	<body style="text-align:center; margin:0 auto;">
+        <link href="https://github.com/yitzhakapps/yitzhakapps.github.io/blob/main/styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<img width=371px height=143px src='https://github.com/yitzhakapps/yitzhakapps.github.io/blob/main/ICON/%D7%A8%D7%A7%D7%A2%20%D7%9C%D7%90%D7%AA%D7%A8%20%D7%90%D7%99%D7%A9%D7%99.png?raw=true'/>
+
+<script language="JavaScript">
+
+var TRange=null;
+function findString (str) {
+ if (parseInt(navigator.appVersion)<4) return;
+ var strFound;
+ if (window.find) {
+
+  // CODE FOR BROWSERS THAT SUPPORT window.find
+  strFound=self.find(str);
+  if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+   strFound=self.find(str)
+  }
+  if (!strFound) {
+   strFound=self.find(str,0,1)
+   while (self.find(str,0,1)) continue
+  }
+ }
+ else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+  // EXPLORER-SPECIFIC CODE
+
+  if (TRange!=null) {
+   TRange.collapse(false)
+   strFound=TRange.findText(str)
+   if (strFound) TRange.select()
+  }
+  if (TRange==null || strFound==0) {
+   TRange=self.document.body.createTextRange()
+   strFound=TRange.findText(str)
+   if (strFound) TRange.select()
+  }
+ }
+ else if (navigator.appName=="Opera") {
+  alert ("Opera browsers not supported, sorry...")
+  return;
+ }
+ if (!strFound) alert ("String '"+str+"' not found!")
+ return;
+}
+
+</script>
+		
+<style>
+.myButton {
+	background-color:#44c767;
+	border-radius:9px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>		
+		
 </head>
 
-<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+<div><h2>חנות אפליקציות כשרה</h2></div>
 
-<div class=WordSection1 dir=RTL>
+<body>
+	<form name="f1" action="" 
+		onSubmit="if(this.t1.value!=null && this.t1.value!='') findString(this.t1.value);return false">
+		<input type="text" placeholder="חפשו אפליקציות..." name=t1 value="" style="background-color:rgb(254, 254, 255);color:rgb(2, 2, 2);width:150px;
+		height:24px;" >
+		<input type="submit" style="background-color:rgb(87, 85, 92);color:white;width:100px;
+height:30px;" value="לחפש">
+		<p> </p>
+	</form>
+	</body>
+
+<div>
+</div>
 <img width=200px height=200px src='https://github.com/yitzhakapps/yitzhakapps.github.io/blob/main/ICON/%D7%90%D7%95%D7%96%D7%A0%D7%99%D7%95%D7%AA%20%D7%98%D7%A8%D7%95%D7%A0%D7%A1%D7%9E%D7%90%D7%A8%D7%98.png?raw=true'/>
 
     <br> <br>
@@ -60,8 +145,25 @@ div.WordSection1
 </div>
 
 
+<div>נבנה ע"י יצחק א. ודוד ח.  2022 ©</div>
+<div>
+	<br>
 </div>
 
 </body>
-
 </html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have no unread notifications
