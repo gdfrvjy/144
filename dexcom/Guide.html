@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Rubik&display=swap' rel='stylesheet'>
+<meta charset="utf-8">
+<style>
+body {
+    font-family: 'Rubik';
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+</style>
+</head>
+<body dir="rtl" align="center">
+
+<p>בס"ד</p>
+
+
+<h2>מדריך שימוש באפליקציית Dexcom G6</h2>
+<p>מדריך מפורט על כל תהליך התחברות לדקסקום - החל מפתיחת החשבון וכולל הדרכה לחיבור ראשוני והפעלת סנסור פעיל / חדש</p>
+<p>תודתנו נתונה לדוד חזן על ששיתף את המדריך לתועלת המשתמשים</p><br>
+ 
+<button class="collapsible">פתיחת חשבון בדקסקום</button>
+
+<div class="content">
+<p> הכנסו לאפליקציית Dexcom G6 ופעלו ע"פ הסרטון והתמונות </p>
+    
+<p>חלק 1</p>
+<div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="Dexcom/enrollment_1.mp4" width="240" height="320"> </video> </div>.</p>
+  
+
+<p> תמונה מס' 1 </p>
+<p> כעת עיברו לג'ימייל במחשב או בנייד (פתוח בנטפרי) </p>
+<img src="DexcomSignUp/08.png" width="240" height="320">
+  
+
+<p> תמונה מס' 2 </p>
+<img src="DexcomSignUp/09.png" width="240" height="320">
+  
+
+<p> תמונה מס' 3 </p>
+<img src="DexcomSignUp/10.png" width="240" height="320">
+  
+
+<p> תמונה מס' 4 </p>
+<img src="DexcomSignUp/11.png" width="240" height="320">
+  
+
+<p> תמונה מס' 5 </p>
+<img src="DexcomSignUp/12.png" width="240" height="320">
+  
+
+<p> תמונה מס' 6 </p>
+<img src="DexcomSignUp/13.png" width="240" height="320">
+  
+
+<p> תמונה מס' 7 </p>
+<p> גללו ללמטה ואשרו את הפרטים </p>
+<img src="DexcomSignUp/14.png" width="240" height="320">
+  
+
+<p> תמונה מס' 8 </p>
+<img src="DexcomSignUp/15.png" width="240" height="320">
+  
+
+<p> תמונה מס' 9 </p>
+<img src="DexcomSignUp/16.png" width="240" height="320">
+  
+
+<p> תמונה מס' 10 </p>
+<img src="DexcomSignUp/17.png" width="240" height="320">
+  
+
+<p> לאחר שיופיע מסך זה , חיזרו לפלאפון והיכנסו לאפליקציית Dexcom G6  </p>
+ 
+<p>חלק 2</p>
+<div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="Dexcom/enrollment_2.mp4" width="240" height="320"> </video> </div>.</p>    
+
+    
+<p> זהו כעת יש לכם חשבון דקסקום  </p>
+</div>
+  
+
+<button class="collapsible">אפליקציית Dexcom G6</button>
+
+<div class="content">
+<p> היתחברות בפעם הראשונה , והפעלת סנסור פעיל/חדש </p>
+  
+
+<div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="Dexcom/dexcom_g6.mp4" width="240" height="320"> </video> </div>.</p>    
+
+  
+<p> סוף מדריך Dexcom G6 </p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+</body>
+</html>
